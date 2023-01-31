@@ -24,6 +24,36 @@ class AppState extends EventEmitter {
       name: 'Pizza',
       price: 2.25,
       emoji: '🍕'
+    }),
+    new Snack({
+      name: 'Grapes',
+      price: .25,
+      emoji: '🍇'
+    }),
+    new Snack({
+      name: 'Hamburger',
+      price: 8.50,
+      emoji: '🍔'
+    }),
+    new Snack({
+      name: 'Oyster',
+      price: .75,
+      emoji: '🦪'
+    }),
+    new Snack({
+      name: 'Ramen',
+      price: 9.00,
+      emoji: '🍜'
+    }),
+    new Snack({
+      name: 'Birthday Cake',
+      price: 10.75,
+      emoji: '🎂'
+    }),
+    new Snack({
+      name: 'Fried Egg',
+      price: 1.25,
+      emoji: '🍳'
     })
   ]
   /** @type {number} */

@@ -31,15 +31,22 @@ export class SnacksController {
     }
 
     purchaseSnack(name) {
-        console.log('you purchased', name);
-        let money = appState.money
-        let currentSnack = appState.snacks.find(s => s.name == name)
-        if (currentSnack.price > money) {
-            Pop.toast('You need more money', 'error', 'center', 3000, true)
-        } else {
-            snacksService.purchaseSnack(name)
-        }
-
+        // console.log('you purchased', name);
+        // try {
+        //     let money = appState.money
+        //     let currentSnack = appState.snacks.find(s => s.name == name)
+        //     // @ts-ignore
+        //     if (currentSnack.price > money) {
+        //         Pop.toast('You need more money', 'error', 'center', 3000, true)
+        //     } else {
+        //         snacksService.purchaseSnack(currentSnack)
+        //         Pop.toast("Sold")
+        //     }
+        // } catch (error) {
+        //     console.error(error)
+        //     Pop.toast(error)
+        // }
+        snacksService.purchaseSnack(name)
     }
 
 

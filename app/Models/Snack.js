@@ -10,9 +10,9 @@ export class Snack {
     get Template() {
         return `
         <div class="col-4 my-3">
-        <div class="card shadow" id="">
+        <div class="card shadow bg-dark" id="">
         <h1 class="text-center py-3 emoji-lg selectable" onclick="app.snacksController.purchaseSnack('${this.name}')">${this.emoji}</h1>
-        <div class="card-body bg-dark text-light text-center">
+        <div class="card-body bg-info text-light text-center">
         <h3>${this.name} | $${this.price} </h3>
         </div>
         </div>
