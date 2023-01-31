@@ -8,7 +8,7 @@ class AppState extends EventEmitter {
   /** @type {import('./Models/Value').Value[]} */
   values = loadState('values', [Value])
 
-  /** @type {import('./Models/').[]} */
+  /** @type {import('./Models/Snack').Snack[]} */
   snacks = [
     new Snack({
       name: 'Pancake',
@@ -26,7 +26,7 @@ class AppState extends EventEmitter {
       emoji: '🍕'
     })
   ]
-  /** @type {import('./Models/').[]} */
+  /** @type {number} */
   money = 0
 
 
